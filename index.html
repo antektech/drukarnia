@@ -65,6 +65,7 @@
     <header>
       <h1>Drukarnia u Antka</h1>
       <h3>fidgety, breloki nfc, figurki i wiele więcej</h3>
+      <h3>strona chwilowo nieaktualna</h3>
     </header>
     <section>
       <h1></h1>
@@ -73,6 +74,24 @@
       <button class="nava" onclick="location.href='#figety'">figety</button><button class="nav">Submit</button><button class="nav">Submit</button><button class="nav">Submit</button><button class="navl">Submit</button>
     </nav>
     <section id= "figety">
+      <img src="<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoJ9GqWyyxdQdl25YsP7NRVLJcLxOk2eNt6tHcjIZS2g&s=10">
+      <label>
+  <input type="checkbox" id="moj-checkbox" onchange="aktualizujStan()">
+  Kliknij mnie
+</label>
+
+<!-- Tutaj wyświetli się cyfra -->
+<span id="wynik">2</span>
+
+<script>
+function aktualizujStan() {
+  const checkbox = document.getElementById('moj-checkbox');
+  const wynik = document.getElementById('wynik');
+  
+  // Jeśli zaznaczony pokaż 1, w przeciwnym razie pokaż 2
+  wynik.textContent = checkbox.checked ? "1" : "2";
+}
+</script>
 
     </section>
   </body>
